@@ -1,10 +1,6 @@
 const express = require('express')
-const bodyParser = require('body-parser')
-const xmlparser = require('express-xml-bodyparser')
 const app = express()
-
-app.use(bodyParser.json())
-app.use(xmlparser())
+app.use(express.json())
 
 app.post('/', async (req, res) => {
   console.log('收到消息推送')
