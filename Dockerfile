@@ -4,8 +4,10 @@ WORKDIR /usr/src/app
 
 COPY package*.json ./
 
-RUN npm install body-parser express-xml-bodyparser
+RUN npm install
 
 COPY . ./
+
+EXPOSE 80
 
 CMD [ "node", "index.js"]
