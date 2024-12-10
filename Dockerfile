@@ -6,8 +6,6 @@ COPY package*.json ./
 
 RUN npm install
 
-RUN npm install xml2js
-
 COPY . ./
 
 CMD [ "node", "index.js"]
